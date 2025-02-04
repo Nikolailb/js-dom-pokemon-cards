@@ -28,9 +28,9 @@ for (const cardData in data) {
         <img 
             width="256"
             class="card--img"
-            src="${data[cardData].sprites.front_default}" alt="${
-    data[cardData].name
-  }">
+            src="${
+              data[cardData].sprites.other["official-artwork"].front_default
+            }" alt="${data[cardData].name}">
     `;
 
   // Toggle between different sprites on click, just using every non-null sprite link.
