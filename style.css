@@ -31,6 +31,7 @@ h2 {
   gap: 15px;
   justify-content: center;
   justify-items: center;
+  list-style: none;
 
   padding: 2rem 0;
   margin-bottom: 2rem;
@@ -55,8 +56,13 @@ h2 {
 .card--text {
   margin: 0.2rem;
   padding: 1rem;
+  list-style-type: none;
 
   border-radius: 5px;
+}
+
+.card--text > li {
+  margin: 0.5rem;
 }
 
 .card--img {
@@ -64,4 +70,27 @@ h2 {
   margin: 0 auto;
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+/* New styling */
+.hidden-content {
+  display: none;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.hidden-content.show {
+  display: block;
+}
+
+.toggle-button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 3px;
 }
