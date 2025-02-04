@@ -35,7 +35,7 @@ for (const cardData in data) {
 
   // Toggle between different sprites on click, just using every non-null sprite link.
   card.querySelector(".card--img").addEventListener("click", () => {
-    let sprites = getNonNullLinks(data[cardData].sprites);
+    let sprites = [...new Set(getNonNullLinks(data[cardData].sprites))];
     let index = sprites.indexOf(card.querySelector(".card--img").src);
     index = (index + 1) % sprites.length;
     card.querySelector(".card--img").src = sprites[index];
